@@ -1,0 +1,55 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>访问校园二手交易购物车页面节点</title>
+    <link href="css/cartStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <style>
+        .div{
+            float: left;
+        }
+    </style>
+<div class="content">
+    <div class="logo">
+         <img src=""><span>关闭</span>
+    </div>
+    <div class="cartList" id="cartList" >
+         
+            <img src="茶馆.jpg" width="200px" >
+            <input id="checkbox1" type="checkbox" value="选择"/>
+        <ul>
+           
+            <!-- 单价 -->
+            <li>¥<input name="price" type="text" value="10.00"></li>
+            <!-- 加减-->
+            <li><input name="minus"  type="button" value="-"><input name="amount" type="text" value="1"><input name="plus" type="button" value="+"></li>
+            <!--  总价 -->
+            <li id="price0">¥10.00</li>
+            <li><p >移入收藏</p><p>删除</p></li>
+        </ul>
+       
+        <img src="岛上书店.jpg" width="200px" >
+       <input id="checkbox2" type="checkbox" value="选择"/>
+        <ul> 
+            <!-- 单价 -->
+            <li>¥<input name="price" type="text" value="15.00"></li>
+            <!-- 加减-->
+            <li><input name="minus" type="button" value="-"><input name="amount" type="text" value="1"><input name="plus"  type="button" value="+"></li>
+            <!--  总价 -->
+            <li id="price1">¥15.00</li>
+            <li><p>移入收藏</p><p>删除</p></li>
+        </ul>
+        <ol>
+            <!--总结算 -->
+            <li id="totalPrice"></li>
+            <!--结算按钮 -->
+            <li><span>结 算</span></li>
+        </ol>
+    </div>
+    <!-----------------显示结算的div---js----------->
+    <div id="cc"></div>
+</div>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

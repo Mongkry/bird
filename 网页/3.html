@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园二手平台</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            margin: 2em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        main {
+            margin: 2em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label, form input, form textarea {
+            margin-bottom: 1em;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>校园二手平台</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="6.html">首页</a></li>
+            <li><a href="#">发布信息</a></li>
+            <li><a href="#">浏览信息</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>发布二手物品信息</h2>
+        <form>
+            <label for="item-name">物品名称：</label>
+            <input type="text" id="item-name" name="item-name" required>
+            <label for="item-description">物品描述：</label>
+            <textarea id="item-description" name="item-description" rows="5" required></textarea>
+            <label for="item-price">物品价格：</label>
+            <input type="number" id="item-price" name="item-price" min="0" required>
+            <button type="submit">发布信息</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+		<title>校园二手交易平台--让购物更简单</title>	
+		<style>  
+        *{margin:0;padding: 0;}
+        a{text-decoration: none;color: darkgray;}
+        .topBar{height: 40px; font-size: 15px; color:#666;line-height: 35px;background-color:white;}                
+        .topBar-left{float: left;list-style: none;}                
+        .topBar-right{float: right; list-style: none;}                
+        .topBar-left li,.topBar-right li{margin: 0 2px;float:left;text-align: center;}         
+        .topBar-left li a:hover,.topBar-right li:hover {color:rgb(236, 77, 14);}       
+        .logoBar{height:100px;width: 100%;left: 0px; background-color:white }         
+        .search_box{ width: 447px;padding-top: 33px;padding-left: 160px; }             
+        .search_text{background-color: white; width:360px;height: 35px;padding:0 8px;position:absolute;top:70px;left:450px; }           
+        .search_btn{ width: 70px;height: 39px;position:absolute;top:70px;left:835px;font-size:14px;background-color:rgb(122, 81, 122);font-family: "微软雅黑";color: white;}
+     
+    
+        ul li{list-style: none;}
+        .box{
+            width: 100%;
+            height: 50px;
+            background: #444;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box ul li{float: left;}
+        .box ul li a{
+            
+            width: 90px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: inline-block;
+        }
+        .box ul li a:hover{
+            color: #fff;
+            background: coral;
+        }
+        .box2 {
+            width:90px;
+            position: absolute;
+            display:none;
+            background: rgb(29, 29, 29);
+            color: rgb(206, 25, 25);
+
+        }
+       
+            .box  li:hover .box2{
+              display: block;
+                
+        } 
+       
+        .box li :hover a{
+            background: #fff;
+                color: black;
+
+        } 
+       
+        /* .navBox{height: 35px;font-size: 20px;color:rgb(189, 226, 43);}       
+        .main{list-style: none;}                
+             .main li{margin: 0 80px;float:left;text-align: left;} 
+             .main li a{padding:0 5px; display: block;height: 35px;}  
+            .main li a:visited,.main li a:link {color:#3914dc;text-decoration: none;}
+            .main li ul{padding:0 0;margin: 0 0;cursor: pointer;display:none;list-style: none;}
+            .main li ul li{text-align: left;line-height: 25px;float:none;}    
+            .main li:hover ul{display:block;position:absolute;}
+            .main li ul li:hover{color:#14b7dc;background:azure;}*/
+        .footer{ width:1100px;margin:0 auto;border-top:#dddddd 1px solid;margin-top:150px; height: 210px;  background: rgb(245,245,245);text-align: center;}
+        .footer p{ margin-top:20px;}
+        .footer a{color:#666;}.footer a:hover{ color:rgb(228, 121, 89);}.footer .fp{color:#666;margin-top:10px;}  
+        .footimg{width:"120px";height: "10px";}
+        .list{position: fixed;top: 250px;left: 1380px;font-family: "微软雅黑";font-size: 20px;color:white;}
+        .list a {text-decoration: none;color:white;}
+		</style>		
+	</head>
+	<body bgcolor="" >
+
+		<div class="headerBar">
+        <div class="topBar">
+            <ul class="topBar-left">
+<a name="Top"></a>   
+             <li>欢迎来到校园二手交易平台！</li>
+            
+            </ul>
+            <ul class="topBar-right">
+                <li > <a href="9.html" target="_blank">购物车</a></li>
+                <li><a href="Untitled.html">登陆</a></li>
+                <li><a href="Untitled-2.html" target="_blank">注册</a></li>
+                <li><a href="3.html" target="_blank">发布信息</a></li>
+            </ul>
+        </div>  
+		<div class="logoBar">
+            <div class="search_box">
+               <input type="text" class="search_text" >
+               <input type="button" value="搜 索" class="search_btn">   
+            </div>
+        </div>
+        </div>  
+        <div class="box">
+            <ul>
+                <!-- a是内联元素 不能嵌套块元素 -->
+                <li><a href="#">户外</a>
+                    <ul class="box2" >
+                        <li><a href="#">帐篷</a></li>
+                        <li><a href="#">鱼竿</a></li>
+                        <li><a href="#">登山杖</a></li>
+                        <li><a href="#">手电筒</a></li>
+                        <li><a href="#">折叠椅</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">饰品</a>
+                    <ul class="box2">
+                        <li><a href="#">手表</a></li>
+                        <li><a href="#">帽子</a></li>
+                        <li><a href="#">挂件</a></li>
+                        <li><a href="#">手链</a></li>
+                        <li><a href="#">手镯</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">书籍</a>
+                    <ul class="box2">
+                        <li><a href="#">杂志</a></li>
+                        <li><a href="购物车.html">国外内名著</a></li>
+                        <li><a href="#">科技类</a></li>
+                        <li><a href="#">教育类</a></li>
+                        <li><a href="#">技能类</a></li>
+                    </ul> 
+                
+                </li> 
+                <li><a hrf="#">娱乐</a>
+                    <ul class="box2">
+                        <li><a href="#">滑板</a></li>
+                        <li><a href="#">代步车</a></li>
+                        <li><a href="#">护腕</a></li>
+                        <li><a href="#">赛车</a></li>
+                        <li><a href="#">积木</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">锻炼</a>
+                    <ul class="box2">
+                        <li><a href="#">乒乓球拍</a></li>
+                        <li><a href="#">哑铃</a></li>
+                        <li><a href="#">篮球</a></li>
+                        <li><a href="#">羽毛球</a></li>
+                        <li><a href="#">负重沙袋</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">生活用品</a>
+                    <ul class="box2">
+                        <li><a href="#">胶带</a></li>
+                        <li><a href="#">刷子</a></li>
+                        <li><a href="#">盆子</a></li>
+                        <li><a href="#">水瓶</a></li>
+                        <li><a href="#">收纳盒</a></li>
+                    </ul>  
+                </li>     
+            </ul>
+        </div>  
+      <!-- <div class="navBox">
+      	<div class="Main">
+      	 <ul class="main">
+                <li><a class="main1" href="#" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服饰区</a> 
+                      <ul >  <li href="#" >女装</li><li href="#">男装</li><li href="#">女鞋</li><li href="#">男鞋</li><li href="#">卫衣</li><li href="#">外套</li> </ul></li>                                       
+                <li><a  class="main2" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆区</a>
+                	<ul>  <li href="#">面膜</li><li href="#">香水</li><li href="#">口红</li><li href="#">洁面</li><li href="#">精华</li><li href="#">美甲</li> </ul></li>      
+                <li><a  class="main3" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰品区</a>
+                  <ul>  <li href="#">项链</li><li href="#">耳饰</li><li href="#">帽子</li><li href="#">手表</li><li href="#">珠宝</li><li href="#">眼镜</li> </ul></li>  
+                <li><a  class="main4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生活区</a>
+                   <ul>  <li href="#">沙发</li><li href="#">灯具</li><li href="#">橱柜</li><li href="#">药品</li><li href="#">烤箱</li><li href="#">空调</li> </ul></li>
+                <li><a  class="main5" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食品区</a>
+                   <ul>  <li href="#">饼干</li><li href="#">米线</li><li href="#">月饼</li><li href="#">酸奶</li><li href="#">名酒</li><li href="#">咖啡</li> </ul></li>   
+            </ul>
+      </div> -->
+      <table cellspacing="2" align="center">
+      	<tr><td><a href="wdress.html" target="_blank"><img src="微信图片_202404072201133.jpg" width="500" height="300"></a>JEEP户外加厚银胶折叠露营帐篷,现售：100元</td>
+      		<!-- <td><video width="500" height="300" src="微信图片_202404072201134.jpg" autoplay="autoplay" loop="loop"></video></td> -->
+            <td><img src="微信图片_202404072201134.jpg" width="500" height="300"  >&nbsp;Redmi K70E,现售：1400元</td>
+            <td><img src="微信图片_202404072201135.jpg" width="400" height="300"  >&nbsp;神火登山杖，现售：15元 </td>	</tr> 	
+      </table>
+      <table class="list" border="1" bgcolor="black" bordercolor="white"cellpadding="5">
+      	<tr><td><a href="wdress.html" target="_writer">热门数码>></a></td></tr>
+      	<tr><td><a href="time.html" target="_blank">限时抢购>></a></td></tr>
+      	<tr><td><a href="shopping.html" target="_blank">二手市场>></a></td></tr>
+      	<tr><td><a href="wdress.html" target="_blank">今日特卖>></a></td></tr>
+      	<tr><td><a href="service.html" target="_blank">联系客服>></a></td></tr>
+        <tr><td><a href="#Top">回到顶部>></a></td></tr>
+      	
+      </table>
+      <p align="center" style="font-family: 宋体;font-size: 30px;color: black;"><b>-今日推荐-</b></p>
+     <table  border="1" bordercolor="writer" cellspacing="10" align="center">
+     	<tr>
+     		<td rowspan="2"><a href="wdress.html" target="_blank"><img src="微信图片_20240407220112.jpg" width="500px" height="600px"></a>特步滑板，现售：80元</td>
+     		<td rowspan="2" colspan="2"><a href="wdress.html" target="_blank"><img src="微信图片_20240407215756.jpg" width="600px" height="600px"></a>&nbsp;鱼竿，现售：50元</td>
+     		<td><a href="wdress.html" target="_blank"><img src="微信图片_20240407220110.jpg" width="300px" height="300px"></a>华强北 WatchS9 Pro,现售：140元</td>	 		
+     	</tr>
+     	<tr>
+     		<td><img src="微信图片_20240407215802.jpg" width="300px" height="300px">华亚杠铃，现售：35元</td>  		 		  
+     	</tr>
+     	<tr>
+     		<td><img src="微信图片_20240407220111.jpg" width="500px" height="300px">维动篮球，现售：35元</td> 
+     		<td><img src="微信图片_20240407220113.jpg"  width="300px" height="300px">XDS黑客 350，现售：900元 </td>
+     		<td><img src="微信图片_202404072201101.jpg" width="300px" height="300px">WITESS羽毛球，现售：70元</td>
+     		<td><img src="微信图片_202404072201111.jpg" width="300px" height="300px">帽子，现售：15元</td>   		
+     	</tr>
+     	<tr>
+     		<td><img src="微信图片_202404072201112.jpg" width="500px" height="300px">匹克羽毛球拍，现售：70元</td> 
+     		<td><img src="微信图片_202404072201121.jpg"  width="300px" height="300px">飓风篮球，现售：60元</td>
+     		<td><img src="微信图片_202404072201122.jpg" width="300px" height="300px">联想，现售：4900元</td>
+     		<td><img src="微信图片_202404072201123.jpg" width="300px" height="300px">帐篷，现售：80元</td>   		
+     	</tr>
+     	<tr>
+     		<td><img src="微信图片_202404072201124.jpg" width="500px" height="300px">一加Ace3，现售：2000元</td> 
+     		<td><img src="微信图片_202404072201125.jpg"  width="300px" height="300px">XDS旭日350</td>
+     		<td><img src="微信图片_202404072201131.jpg" width="300px" height="300px">七彩虹隐星，现售：5000元</td>
+     		<td><img src="微信图片_202404072201132.jpg" width="300px" height="300px">iQOO Neo8，现售：1500元</td>   		
+     	</tr>
+     </table> 
+     <div class="footer">
+            <p><a href="#">联系我们</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#">诚聘英才</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#">合作招商</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#">广告平台</a></p>
+            <p class="fp">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</p>
+            <div class="footimg">
+                    <a href="http://www.shdf.gov.cn/shdf/channels/740.html"> <img src="扫黄打黑.jpg" width="40px";height="30px";>扫黄打非网举报专区</a>
+                     <a href="http://www.12377.cn/">    <img src="中国互联网举报中心.jpg" width="40px";height="40px">中国互联网举报中心</a>
+                     <a href="http://cyberpolice.mps.gov.cn/">   <img src="网警.jpg" width="40px";height="40px">网络警察提醒你</a>
+                     <a href="http://www.12377.cn/node_548446.htm">   <img src="网络举报APP下载.jpg" width="40px";height="40px">网络举报APP下载</a>
+            </div>
+        </div>
+	</body>
+</html>
